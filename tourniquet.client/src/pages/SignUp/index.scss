@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Oblique";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../assets/fonts/12\ Avenir\ 35\ LightOblique\ \ \ 73173.woff2") format("woff2"),
+        url("../../assets/fonts/12\ Avenir\ 35\ LightOblique\ \ \ 73173.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Roboto-medium";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../assets/fonts/roboto-medium.woff2") format("woff2"),
+        url("../../assets/fonts/roboto-medium.woff") format("woff");
+}
+
+.main-container {
+    font-family: Roboto-medium;
+    // margin: 0;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // -ms-transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
+    margin-top: 208px;
+
+    &-inner {
+        height: auto;
+        max-width: 500px;
+
+        &-active {
+            animation: top-to-bottomm 0.4s ease-in-out;
+            height: auto;
+        }
+
+        
+    }
+}
+
+@keyframes top-to-bottomm {
+    0% {
+        height: 127px;
+    }
+    100% {
+        height: auto;
+    }
+}
+
+.main-container-inner::before {
+    content: "Sdunets Turniquet";
+    position: absolute;
+    top: -45px;
+    text-align: center !important;
+    width: 100%;
+    font-family: Oblique;
+    font-size: 36px;
+    font-weight: 500;
+    color: rgba(132, 207, 34, 0.79);
+}
+
+.top-to-bottom-animation {
+    display: none;
+}
+
+.top-to-bottom-animation-active {
+    animation: top-to-bottom 0.4s ease-in-out;
+    display: block;
+}
+
+@keyframes top-to-bottom {
+    0% {
+        display: none;
+        transform: translateY(-90%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.settings-btn {
+    cursor: pointer;
+    color: #424e62b0;
+}
+
+.settings-btn:hover {
+    color: #333942b0;
+    transform: rotate(90deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.qr-code-image {
+    display: none;
+}

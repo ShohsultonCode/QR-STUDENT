@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+	border-radius: 8px;
+	background: rgba(157, 157, 157, 0.147);
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5p rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.302);
+    border-radius: 8px;
+}
